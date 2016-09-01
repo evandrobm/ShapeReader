@@ -2,6 +2,11 @@
 
 namespace muka\ShapeReader;
 
+// =================================================================================================
+// Subsitute for PHP dBase functions
+if (!function_exists('dbase_open')) require_once(dirname(__FILE__).'/dbase_functions.php');
+// =================================================================================================
+
 class DbfFile {
 
     private $filename;
